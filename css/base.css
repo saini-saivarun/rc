@@ -1,0 +1,116 @@
+:root {
+    --minds-background: #0D1019;
+    --minds-border: #272727;
+    --minds-orange: #f88429;
+    --minds-white: #ffffff;
+    --minds-grey: #9C9DA0;
+}
+
+body {
+    background: var(--minds-background);
+    color: var(--minds-white);
+}
+
+header, footer {
+    border-bottom: 1px solid var(--minds-border);
+}
+
+header .nav-link, footer .nav-link {
+    color: var(--minds-white);
+}
+
+header .nav-link:hover, footer .nav-link:hover {
+    color: var(--minds-orange);
+}
+
+.footer-links {
+    border-bottom: 1px solid var(--minds-grey);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--minds-orange);
+    border-color: var(--minds-orange);
+}
+
+.p-dark {
+    font-size: 24px;
+    color: var(--minds-grey);
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.bg-light {
+    background: var(--minds-white);
+    color: var(--minds-background);
+}
+
+.tiles img {
+    max-width: 120px;
+}
+
+.services img {
+    max-width: 60px;
+}
+
+.services>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactus-form {
+    background: var(--minds-orange);
+    border-radius: 5px;
+}
+.contactus-form>p{
+    font-size: 14px;
+}
+.contactus-form input, .contactus-form textarea {
+    background: var(--minds-orange);
+    color: var(--minds-white);
+    border-color: var(--minds-white);
+}
+.contactus-form input:focus, .contactus-form textarea:focus {
+    background: var(--minds-orange);
+    color: var(--minds-white);
+    border-color: var(--minds-white);
+}
+.contactus-form input:-webkit-autofill,
+.contactus-form input:-webkit-autofill:hover, 
+.contactus-form input:-webkit-autofill:focus, 
+.contactus-form input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--minds-orange) inset !important;
+    -webkit-text-fill-color: var(--minds-white);
+}
+
+.contactus-form label {
+    color: var(--minds-white);
+}
+
+.rg {
+    background: radial-gradient(
+      circle at 50% -150%,
+      var(--minds-orange),
+      var(--minds-background) 65%
+    );
+}
+
+/* .services  */
+
+@media screen and (min-width: 1024px) {
+    .rg {
+        background: radial-gradient(
+          circle at 50% -200%,
+          var(--minds-orange),
+          var(--minds-background) 65%
+        );
+    }
+
+    .contactus-form {
+        margin-top: -150px;
+    }
+}
