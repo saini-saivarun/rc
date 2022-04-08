@@ -23,6 +23,10 @@ header .nav-link:hover, footer .nav-link:hover {
     color: var(--minds-orange);
 }
 
+header img, footer img {
+    width: 200px;
+}
+
 .footer-links {
     border-bottom: 1px solid var(--minds-grey);
 }
@@ -34,7 +38,6 @@ header .nav-link:hover, footer .nav-link:hover {
 }
 
 .p-dark {
-    font-size: 24px;
     color: var(--minds-grey);
 }
 
@@ -52,6 +55,15 @@ header .nav-link:hover, footer .nav-link:hover {
     max-width: 120px;
 }
 
+.mw-heading {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+#aboutUs h1 {  
+    padding-top: 100px;
+}
+
 .services img {
     max-width: 60px;
 }
@@ -60,6 +72,16 @@ header .nav-link:hover, footer .nav-link:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.services .services-img {
+    background: var(--minds-orange);
+    border-radius: 100px;
+}
+
+.services .services-img img {
+    max-width: 28px;
+    margin: 20px;
 }
 
 .contactus-form {
